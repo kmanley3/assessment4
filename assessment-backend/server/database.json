@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Barbarian",
+        "magic": "none"
+    },
+    {
+        "id": 2,
+        "name": "Bard",
+        "magic": "Arcane"
+    },
+    {
+        "id": 3,
+        "name": "Cleric",
+        "magic": "Holy"
+    },
+    {
+        "id": 4,
+        "name": "Druid",
+        "magic": "Nature"
+    },
+    {
+        "id": 5,
+        "name": "Fighter",
+        "magic": "none"
+    },
+    {
+        "id": 6,
+        "name": "Monk",
+        "magic": "none"
+    },
+    {
+        "id": 7,
+        "name": "Paladin",
+        "magic": "Holy"
+    },
+    {
+        "id": 8,
+        "name": "Ranger",
+        "magic": "Nature"
+    },
+    {
+        "id": 9,
+        "name": "Rogue",
+        "magic": "none"
+    },
+    {
+        "id": 10,
+        "name": "Sorcerer",
+        "magic": "Arcane"
+    },
+    {
+        "id": 11,
+        "name": "Warlock",
+        "magic": "Arcane"
+    },
+    {
+        "id": 12,
+        "name": "Wizard",
+        "magic": "Arcane"
+    }
+]

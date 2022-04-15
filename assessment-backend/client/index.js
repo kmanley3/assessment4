@@ -25,7 +25,7 @@ document.getElementById("fortuneButton").onclick = function () {
   const getAllClasses = () => axios.get(baseURL).then(classesCb).catch(console.log(err.res.data))
   const createNewClass = body => axios.post(baseURL, body).then(classesCb).catch(console.log(err.res.data))
   const deleteThisClass = id => axios.delete(`${baseURL}/${id}`).then(classesCb).catch(console.log(err.res.data))
-  const editThisClass = (id, type) => axios.put(`${baseURL}/${id}`).then(classesCb).catch(console.log(err.res.data))
+  const editThisClass = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(classesCb).catch(console.log(err.res.data))
 
 const displayClasses = arr => {
     classContainer.innerHTML = ``
@@ -47,7 +47,7 @@ const createClassCard = dndClass => {
         <button onclick="editThisClass(${dndClass.id}, 'holy')">Holy</button>
         <button onclick="editThisClass(${dndClass.id}, 'none')">None</button>
     </div>
-    <button onclick="deleteMovie(${dndClass.id}")>x</button>
+    <button onclick="deleteThisClass(${dndClass.id})">x</button>
         `
     classContainer.appendChild(classCard)
 }

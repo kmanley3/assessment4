@@ -22,13 +22,6 @@ app.get("/api/compliment", (req, res) => {
   
 });
 
-// app.post("/api/compliment", (req, res) => {
-//   const newCompliment = String(req)
-//   compliments.push(newCompliment)
-//   console.log(compliments)
-//   res.status(200).send(compliments)
-// })
-
 app.get("/api/fortune", (req, res) => {
   const fortunes = ["A golden egg of opportunity falls into your lap this month.",
             "Every flower blooms in its own sweet time.",

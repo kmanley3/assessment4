@@ -9,7 +9,7 @@ module.exports = {
     deleteClass: (req, res) => {
         let index = classes.findIndex(elem => elem.id === +req.params.id)
         classes.splice(index, 1)
-        res.status(200).send(movies)
+        res.status(200).send(classes)
     },
     createClass: (req, res) => {
         const {name, magic} = req.body

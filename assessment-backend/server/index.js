@@ -11,13 +11,13 @@ app.use(express.json()); // When we want to be able to accept JSON.
 app.get("/api/compliment", (req, res) => {
   
   // choose random compliment
-  let randomIndex = Math.floor(Math.random() * compliments.length);
-  let randomCompliment = compliments[randomIndex];
-  
   const compliments = ["Gee, you're a smart cookie!",
            "Cool shirt!",
            "Your Javascript skills are stellar.",
   ];
+  let randomIndex = Math.floor(Math.random() * compliments.length);
+  let randomCompliment = compliments[randomIndex];
+  
   res.status(200).send(randomCompliment);
   
 });
@@ -27,7 +27,7 @@ app.get("/api/fortune", (req, res) => {
             "Every flower blooms in its own sweet time.",
             "Like the river flow into the sea. Something are just meant to be.",
             "Resting well is as important as working hard.",
-            "What’s hidden in an empty box?",
+            "What's hidden in an empty box?",
           ];
   let randomIndex = Math.floor(Math.random() * fortunes.length);
   let randomFortune = fortunes[randomIndex];
